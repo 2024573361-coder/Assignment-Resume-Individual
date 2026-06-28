@@ -1,0 +1,178 @@
+<!DOCTYPE>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact</title>
+   <link rel="shortcut icon" type="image/jpg" href="tabicon.png"/>
+</head>
+
+<style>
+  body {
+     margin: 0;
+     padding: 0; 
+  }
+</style>
+    
+<div id="firstdivision" style="background-image: url('https://i.pinimg.com/originals/4b/1c/18/4b1c18dc8e18bdbc469498ed1fc0434b.jpg'); background-size: cover; min-height: 100vh; text-align: center;">
+
+  <!-- header -->
+  <div style="height: auto; background-color: #f9a83a; position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;">
+    <h1 style="color: white; padding: 10px; margin: 0; text-align: center; font-size: 24px;">
+      <nav class="navigation-menu">
+        <a href="frontpage.html">Home</a>
+        <a href="qualification.html">Qualification</a>
+        <a href="hobby.html">Experience</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contactme.html">Contact Me</a>
+      </nav>
+    </h1>
+  </div>
+
+  <style>
+    .navigation-menu {
+      display: flex;
+      justify-content: center;
+      gap: 25px;               
+      margin-top: 20px;
+    }
+
+    .navigation-menu a {
+      display: inline-block;
+      text-decoration: none;   
+      background-color: #88d1e3; 
+      color: #01566b;            
+      padding: 10px 24px;        
+      border-radius: 50px;       
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .navigation-menu a:hover {
+      background-color: #01566b;
+      color: #ffffff;
+    }
+  </style>
+
+  <body>
+    <!-- MASTER CONTAINER: Handles row-display, centering, and completely uniform gaps -->
+    <div class="boxes-wrapper">
+
+      <!-- BOX 1: PHONE NUMBER -->
+      <div class="info-box box-one">
+        <h3>Phone Number</h3>
+        <img src="phone.png" alt="Phone icon" class="card-icon" />
+        <p class="detail-text">Number: +6011-1186723</p>
+        <p class="action-text"><a href="https://wa.me/qr/AWJFRL2SL4K7G1" target="_blank">Click here</a> to message</p>
+      </div>
+
+      <!-- BOX 2: E-MAIL -->
+      <div class="info-box box-two">
+        <h3>E-mail Address</h3>
+        <img src="email.png" alt="Email icon" class="card-icon" />
+        <p class="detail-text">e-mail: nurhazimah.rah@gmail.com</p>
+        <p class="action-text"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=nurhazimah.ras@gmail.com" target="_blank">Click here</a> to message on e-mail</p>
+      </div>
+
+      <!-- BOX 3: INSTAGRAM -->
+      <div class="info-box box-three">
+        <h3>Instagram</h3>
+        <img src="ig.png" alt="ig icon" class="card-icon" />
+        <p class="detail-text">Account Name: hq._.jelnut</p>
+        <p class="action-text"><a href="https://www.instagram.com/hq._.jelnut?igsh=MWFqcGF4bGt0OHM2Mw==" target="_blank">Click here</a> to Instagram account</p>
+      </div>
+
+    </div>
+
+    <!-- ONE SINGLE CLEAN STYLE SHEET TO MANAGE EVERYTHING -->
+    <style>
+      /* Layout Container */
+      .boxes-wrapper {
+        display: flex;
+        flex-direction: row;       /* Sits elements side-by-side */
+        justify-content: center;   /* Centers all cards horizontally on screen */
+        align-items: center;       /* Aligns them vertically along the same line */
+        gap: 30px;                 /* Absolute, matching gaps between cards */
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 130px;        /* Safely offsets the fixed header banner */
+        box-sizing: border-box;
+      }
+
+      /* Uniform Base Style for ALL 3 Cards */
+      .info-box {
+        width: 300px;              /* Exactly uniform width */
+        height: 420px;             /* Exactly uniform height */
+        border-radius: 15px;       
+        font-family: sans-serif;
+        box-sizing: border-box;
+        padding: 25px;             /* Uniform internal breathing room */
+        text-align: center;
+        box-shadow: 0px 4px 15px rgba(0,0,0,0.05);
+        transition: transform 0.2s ease, background-color 0.2s ease;
+      }
+
+      /* Consistent image scaling */
+      .card-icon {
+        height: 80px;
+        width: auto;
+        margin: 15px auto;
+        display: block;
+      }
+
+      /* Standardizes text placement inside the containers */
+      .detail-text {
+        margin-top: 40px;
+        font-weight: bold;
+        font-size: 0.95rem;
+      }
+
+      .action-text {
+        margin-top: 30px;
+        font-size: 0.9rem;
+      }
+
+      .info-box a {
+        text-decoration: underline;
+        font-weight: bold;
+      }
+
+      /* --- BOX 1 COLORS --- */
+      .box-one {
+        background-color: rgba(105, 128, 32, 0.7); /* Green with opacity */
+        color: white;
+      }
+      .box-one a { color: white; }
+      .box-one:hover {
+        transform: translateY(-5px);
+        background-color: rgba(156, 180, 67, 0.85); /* Earthy green pop hover only on card 1 */
+      }
+
+      /* --- BOX 2 COLORS --- */
+      .box-two {
+        background-color: rgba(1, 86, 107, 0.6);  /* Custom Dark Teal with opacity */
+        color: white;
+      }
+      .box-two a { color: #88d1e3; }
+      .box-two:hover {
+        transform: translateY(-5px);
+        background-color: rgba(70, 150, 175, 0.85); /* Slightly darker middle-aqua hover */
+      }
+
+      /* --- BOX 3 COLORS --- */
+      .box-three {
+        background-color: rgba(30, 66, 109, 0.8);  /* Slate Blue with opacity */
+        color: white;
+      }
+      .box-three a { color: #88d1e3; }
+      .box-three:hover {
+        transform: translateY(-5px);
+        background-color: rgba(70, 150, 175, 0.85); /* Slightly darker middle-aqua hover */
+      }
+    </style>
+  </body>
+</div>
+</html>

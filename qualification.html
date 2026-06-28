@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Qualification</title>
+  <link rel="shortcut icon" type="image/jpg" href="tabicon.png"/>
+  <style>
+    body {
+      margin: 0;
+      padding: 0; 
+    }
+
+    /* Top Navigation Bar Styling */
+    .header-container {
+      height: auto; 
+      background-color: #f9a83a; 
+      position: fixed; 
+      top: 0; 
+      left: 0; 
+      width: 100%; 
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; /* Pushes clock to left, menu to center/right */
+      padding: 10px 20px;
+      box-sizing: border-box;
+    }
+
+    /* Styled Digital Clock Widget */
+    .clock-widget {
+      background-color: #e03b0c; 
+      opacity: 0.9;              
+      color: #ffffff;            
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-family: sans-serif;
+      text-align: center;
+      box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+      min-width: 120px;
+    }
+
+    .clock-time {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0;
+      line-height: 1;
+    }
+
+    .clock-date {
+      font-size: 12px;
+      font-weight: bold;
+      margin-top: 2px;
+      text-transform: uppercase;
+    }
+
+    /* Navigation Menu styling */
+    .navigation-menu {
+      display: flex;
+      justify-content: center; 
+      gap: 25px;               
+      flex-grow: 1;
+      margin-right: 140px; /* Counter-balance the clock width to keep menu centered perfectly */
+    }
+
+    .navigation-menu a {
+      display: inline-block;
+      text-decoration: none;   
+      background-color: #88d1e3; 
+      color: #01566b;            
+      padding: 10px 24px;        
+      border-radius: 50px;       
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .navigation-menu a:hover {
+      background-color: #01566b;
+      color: #ffffff;
+    }
+
+    /* Main Content Box Layouts */
+    .boxes-wrapper {
+      display: flex;
+      flex-direction: column;  
+      gap: 20px;               
+      width: 800px;            
+    }
+
+    .info-box {
+      padding: 20px; /* Increased from 2px for clean inner text layout */
+      border-radius: 15px;     
+      font-family: sans-serif;
+      box-sizing: border-box;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.05); 
+      text-align: center;
+      position: relative; 
+    }
+
+    .box-one {
+      background-color: #698020;
+      opacity: 0.7;             
+      color: white;              
+      top: 120px;
+      left: 20px;
+    }
+
+    .box-two {
+      background-color: #e03b0c; 
+      opacity: 0.6;              
+      color: white;              
+      top: 130px;
+      left: 20px; 
+    }
+
+    .box-three {
+      background-color: #1e426d ; 
+      opacity: 0.8;              
+      color: white;              
+      top: 60px;
+      left: 20px; 
+    }
+
+    /* Skills Grid & Cards Configuration */
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;         
+      justify-content: center; 
+      gap: 12px;               
+      margin-top: 15px;        
+    }
+
+    .skill-box {
+      background-color: rgba(255, 255, 255, 0.95); 
+      color: #32400a;                               
+      padding: 12px 16px;                            
+      border-radius: 8px;                           
+      font-weight: bold;
+      font-size: 0.95rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);    
+      transition: transform 0.2s ease;              
+    }
+
+    .skill-box:hover {
+      transform: translateY(-2px);
+      background-color: rgba(255, 255, 255, 1);
+    }
+  </style>
+</head>
+<body>
+
+  <div id="firstdivision" style="background-image: url('https://i.pinimg.com/originals/4b/1c/18/4b1c18dc8e18bdbc469498ed1fc0434b.jpg'); background-size: cover; height: 1400px; text-align: center;">
+
+    <div class="header-container">
+      
+      <div class="clock-widget">
+        <div class="clock-time" id="live-time">00:00</div>
+        <div class="clock-date" id="live-date">LOADING...</div>
+      </div>
+
+      <nav class="navigation-menu">
+        <a href="frontpage.html">Home</a>
+        <a href="qualification.html">Qualification</a>
+        <a href="hobby.html">Experience</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contactme.html">Contact Me</a>
+      </nav>
+    </div>
+
+    <img src="propper.jpg" style="height:400px; width:300px; margin:50px; margin-top: 120px; float: left;" alt="Profile Picture" />
+
+    <div class="boxes-wrapper">
+      
+      <div class="info-box box-one">
+        <h3>My Qualification</h3>
+        <p>Hi everyone ❤️</p>
+        <p>Currently I am a student at Universiti Teknologi MARA.<br>As a dedicated student, I have worked hard to build a strong academic foundation and develop valuable professional skills. Thanks to this training, I am confident in my abilities and eager to bring my expertise, fresh perspective, and strong work ethic to a new team.</p>
+      </div>
+      
+      <div class="info-box box-two">
+        <h3>My Skills</h3>
+        <p>This is some of my skills</p>
+        <div class="skills-container">
+          <span class="skill-box"><img src="codingicon.png" style="height:100px;" alt="CSS" class="skill-icon"><p>CSS</p></span>
+          <span class="skill-box"><img src="time.png" style="height:100px;" alt="Time Management" class="skill-icon"><p>Time Management</p></span>
+          <span class="skill-box"><img src="thinking.png" style="height:100px;" alt="Critical thinking" class="skill-icon"><p>Critical thinking</p></span>
+          <span class="skill-box"><img src="lens.png" style="height:100px;" alt="Transparency" class="skill-icon"><p>Transparency</p></span>
+          <span class="skill-box"><img src="hands.png" style="height:100px;" alt="Teamwork" class="skill-icon"><p>Teamwork</p></span>
+        </div>
+      </div>
+
+    </div> <div class="info-box box-three" style="width: 1150px; margin: 100px auto 0 auto; text-align: center; clear: both;">
+      <h3>Education</h3>
+      <div class="skills-container" style="gap: 20px;">
+        <span class="skill-box"><img src="s2.jpg" style="height:100px;" alt="SMK S2" class="skill-icon"><p>SMK SEREMBAN 2</p><p>SPM (2022)</p></span>
+        <span class="skill-box"><img src="adtec.jpg" style="height:100px;" alt="ADTEC" class="skill-icon"><p>ADTEC Shah Alam</p><p>1 Semester of Diploma in Quality Assurance Technology</p></span>
+        <span class="skill-box"><img src="rembau.jpg" style="height:100px;" alt="UiTM Rembau" class="skill-icon"><p>UiTM Rembau</p><p>Diploma in Information Management</p></span>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      
+      // Extract and Format current Time metrics
+      let hours = now.getHours();
+      let minutes = now.getMinutes();
+      hours = hours < 10 ? '0' + hours : hours;
+      minutes = minutes < 10 ? '0' + minutes : minutes;
+      
+      // Build Custom dynamic text strings
+      const timeString = hours + ':' + minutes;
+      
+      const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+      const dayName = days[now.getDay()];
+      const dateNum = now.getDate();
+      const dateString = dayName + ' ' + dateNum;
+
+      // Assign updates to DOM nodes
+      document.getElementById('live-time').textContent = timeString;
+      document.getElementById('live-date').textContent = dateString;
+    }
+
+    // Run Engine loop intervals
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery</title>
+  <link rel="shortcut icon" type="image/jpg" href="tabicon.png"/>
+</head>
+
+<style>
+  body {
+     margin: 0;
+     padding: 0; 
+  }
+</style>
+    
+<div id="firstdivision" style="background-image: url('https://i.pinimg.com/originals/4b/1c/18/4b1c18dc8e18bdbc469498ed1fc0434b.jpg'); background-size: cover; min-height: 100vh; text-align: center; background-attachment: fixed;">
+
+  <div style="height: auto; background-color: #f9a83a; position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;">
+    <h1 style="color: white; padding: 10px; margin: 0; text-align: center; font-size: 24px;">
+      <nav class="navigation-menu">
+        <a href="frontpage.html">Home</a>
+        <a href="qualification.html">Qualification</a>
+        <a href="hobby.html">Experience</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contactme.html">Contact Me</a>
+      </nav>
+    </h1>
+  </div>
+
+  <style>
+    /* Navigation Bar Styling */
+    .navigation-menu {
+      display: flex;
+      justify-content: center;
+      gap: 25px;               
+      margin-top: 20px;
+    }
+
+    .navigation-menu a {
+      display: inline-block;
+      text-decoration: none;   
+      background-color: #88d1e3; 
+      color: #01566b;            
+      padding: 10px 24px;        
+      border-radius: 50px;       
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .navigation-menu a:hover {
+      background-color: #01566b;
+      color: #ffffff;
+    }
+  </style>
+
+  <body>
+
+    <div class="gallery-container">
+      <h2>My Gallery Collection</h2>
+
+      <figure class="gallery-audio-right">
+    <audio controls autoplay muted width="320" height="300">
+      <source src="abba.mp3">
+    </audio>
+    </figure>
+      
+      <div class="masonry-wall">
+        <div class="wall-item"><img src="art1.jpg" alt="Picture 1"></div>
+        <div class="wall-item"><img src="art2.jpg" alt="Picture 2"></div>
+        <div class="wall-item"><img src="art3.jpg" alt="Picture 3"></div>
+        <div class="wall-item"><img src="art4.jpg" alt="Picture 4"></div>
+        <div class="wall-item"><img src="art5.jpg" alt="Picture 5"></div>
+        <div class="wall-item"><img src="art6.jpg" alt="Picture 6"></div>
+        <div class="wall-item"><img src="art7.jpg" alt="Picture 7"></div>
+        <div class="wall-item"><img src="art8.jpg" alt="Picture 8"></div>
+        <div class="wall-item"><img src="art9.jpg" alt="Picture 9"></div>
+        <div class="wall-item"><img src="art10.jpg" alt="Picture 10"></div>
+        <div class="wall-item"><img src="art11.jpg" alt="Picture 11"></div>
+        <div class="wall-item"><img src="art12.jpg" alt="Picture 12"></div>
+        <div class="wall-item"><img src="art13.jpg" alt="Picture 13"></div>
+        <div class="wall-item"><img src="art14.jpg" alt="Picture 14"></div>
+        <div class="wall-item"><img src="art15.jpg" alt="Picture 15"></div>
+        <div class="wall-item"><img src="art16.jpg" alt="Picture 16"></div>
+        <div class="wall-item"><img src="art17.jpg" alt="Picture 17"></div>
+        <div class="wall-item"><img src="art18.jpg" alt="Picture 18"></div>
+        <div class="wall-item"><img src="art19.jpg" alt="Picture 19"></div>
+        <div class="wall-item"><img src="art20.jpg" alt="Picture 20"></div>
+        <div class="wall-item"><img src="art21.jpg" alt="Picture 21"></div>
+        <div class="wall-item"><img src="art22.jpg" alt="Picture 22"></div>
+        <div class="wall-item"><img src="art23.jpg" alt="Picture 23"></div>
+        <div class="wall-item"><img src="art24.jpg" alt="Picture 24"></div>
+        <div class="wall-item"><img src="art25.jpg" alt="Picture 25"></div>
+        <div class="wall-item"><img src="art26.jpg" alt="Picture 26"></div>
+        <div class="wall-item"><img src="art27.jpg" alt="Picture 27"></div>
+        <div class="wall-item"><img src="art28.jpg" alt="Picture 28"></div>
+        <div class="wall-item"><img src="art29.jpg" alt="Picture 29"></div>
+        <div class="wall-item"><img src="art30.jpg" alt="Picture 30"></div>
+        <div class="wall-item"><img src="art31.jpg" alt="Picture 31"></div>
+        <div class="wall-item"><img src="art32.jpg" alt="Picture 32"></div>
+        <div class="wall-item"><img src="art33.jpg" alt="Picture 33"></div>
+        <div class="wall-item"><img src="art34.jpg" alt="Picture 34"></div>
+        <div class="wall-item"><img src="art35.jpg" alt="Picture 35"></div>
+        <div class="wall-item"><img src="art36.jpg" alt="Picture 36"></div>
+        <div class="wall-item"><img src="art37.jpg" alt="Picture 37"></div>
+        <div class="wall-item"><img src="art38.jpg" alt="Picture 38"></div>
+        <div class="wall-item"><img src="art39.jpg" alt="Picture 39"></div>
+        <div class="wall-item"><img src="art40.jpg" alt="Picture 40"></div>
+        <div class="wall-item"><img src="art41.jpg" alt="Picture 41"></div>
+        <div class="wall-item"><img src="art42.jpg" alt="Picture 42"></div>
+      </div>
+    </div>
+
+    <style>
+      .gallery-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 100px 20px 60px 20px; /* 160px top padding keeps it safely below the navbar */
+        font-family: sans-serif;
+      }
+
+      .gallery-container h2 {
+        color: #01566b;
+        font-size: 32px;
+        margin-bottom: 40px;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+
+      /* Pulls the audio element completely out of normal text flow */
+      .gallery-audio-right {
+        margin: 0;
+        position: absolute;
+        right: 20px;          /* Locks the player directly to the right margin line */
+        top: 150px;
+        transform: translateY(-50%); /* Keeps it perfectly vertically aligned down the center track */
+      }
+
+      /* Creates the automatic newspaper/Pinterest vertical lanes */
+      .masonry-wall {
+        column-count: 4;          /* Generates 4 parallel columns on wide screens */
+        column-gap: 20px;         /* Horizontal spacing between columns */
+        width: 100%;
+      }
+
+      /* Frame structure around each image to keep layouts stable */
+      .wall-item {
+        display: inline-block;    /* Prevents pictures from clipping across columns */
+        width: 100%;
+        margin-bottom: 20px;      /* Vertical spacing between pictures in the same lane */
+        border-radius: 10px;      /* Soft rounded corners */
+        overflow: hidden;
+        box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+        background-color: rgba(255, 255, 255, 0.8);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      /* Actual Image configurations */
+      .wall-item img {
+        width: 100%;
+        height: auto;             /* Lets each image keep its original natural height cut */
+        display: block;
+        transition: transform 0.3s ease;
+      }
+
+      /* Creative Hover Pop Effect */
+      .wall-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 8px 25px rgba(0,0,0,0.2);
+      }
+
+      .wall-item:hover img {
+        transform: scale(1.03);   /* Subtle inner lens zoom when hovered */
+      }
+
+      /* Responsive Layout: Automatically scales column count down for small screens */
+      @media (max-width: 900px) {
+        .masonry-wall { column-count: 2; } /* Changes to 2 columns on tablets */
+      }
+
+      @media (max-width: 600px) {
+        .masonry-wall { column-count: 1; } /* Drops to 1 wide lane on mobile screens */
+      }
+    </style>
+
+  </body>
+</div>
+</html>

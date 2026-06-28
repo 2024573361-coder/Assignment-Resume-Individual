@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title> Zimah's Website </title>
+    <link rel="shortcut icon" type="image/jpg" href="tabicon.png" />
+    
+    <style>
+        html, body {
+           margin: 0;
+           padding: 0; 
+           height: 100%; /* Forces the page layout to span the entire screen height */
+        }
+        body {
+           display: flex;
+           flex-direction: column; /* Stacks the page-content and footer vertically */
+        }
+        .page-content-wrapper {
+           flex: 1 0 auto; /* Expands to push the footer completely to the bottom edge */
+        }
+        .sticky-footer-container {
+           flex-shrink: 0; /* Prevents the footer from squishing shrinkingly */
+           height: auto; 
+           background-color: #f9a83a;
+        }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="page-content-wrapper">
+        
+        <audio id="myBgMusic" src="music.mp3" loop></audio>
+
+        <script>
+          document.addEventListener('click', function() {
+            var audio = document.getElementById('myBgMusic');
+            if (audio.paused) {
+              audio.play();
+            }
+          });
+        </script>
+            
+        <div id="firstdivision" style="background-image: url('https://i.pinimg.com/originals/4e/80/79/4e807963a79b52fab909120c670a6047.jpg'); background-size: cover; height: 590px; text-align: center;">
+            <img src="logo.jpg" style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%; border: 8px solid #698020; margin-top: 100px;" alt="web icon">
+
+            <div class="stitched-text-container">
+                 <img src="lh.png" alt="H">
+                 <img src="la.png" alt="A">
+                 <img src="lz.png" alt="Z">
+                 <img src="li.png" alt="I">
+                 <img src="lm.png" alt="M">
+                 <img src="la.png" alt="A">
+                 <img src="lh.png" alt="H">
+            </div>
+
+            <style>
+              .stitched-text-container {
+                display: flex;
+                justify-content: center; 
+                align-items: center;
+                gap: 0px;                
+                margin-top: 40px;
+              }
+              .stitched-text-container img {
+                height: 100px;            
+                width: auto;
+              }
+            </style>
+            
+            <p style="font-size:30px; color:#01566b;"><em>Get To Know Me!!</em></p>
+            
+            <nav class="navigation-menu">
+                <a href="#seconddivision">About Me</a>
+                <a href="qualification.html">Qualification</a>
+                <a href="hobby.html">Experience</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contactme.html">Contact Me</a>
+            </nav>
+
+            <style>
+              .navigation-menu {
+                display: flex;
+                justify-content: center; 
+                gap: 15px;               
+                margin-top: 20px;
+              }
+              .navigation-menu a {
+                display: inline-block;
+                text-decoration: none;   
+                background-color: #88d1e3; 
+                color: #01566b;            
+                padding: 10px 24px;        
+                border-radius: 50px;       
+                font-family: sans-serif;
+                font-weight: bold;
+                font-size: 16px;
+                transition: all 0.3s ease;
+              }
+              .navigation-menu a:hover {
+                background-color: #01566b;
+                color: #ffffff;
+              }
+            </style>
+
+            <div id="live-clock" style="color: #01566b; font-family: sans-serif; font-weight: bold; font-size: 14px; margin-top:50px; text-align: center; letter-spacing: 0.5px;">
+                Loading Date & Time...
+            </div>
+
+            <script>
+        function updateClock() {
+            const now = new Date();
+            
+            // Format Options for Date & Time Display
+            const options = { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: true 
+            };
+            
+            document.getElementById('live-clock').innerText = now.toLocaleString('en-US', options);
+        }
+
+        // Initialize clock instantly and update every 1000ms (1 second)
+        updateClock();
+        setInterval(updateClock, 1000);
+    </script>
+
+        </div>
+
+        <div id="seconddivision" style="background-image: url('https://i.pinimg.com/736x/f7/65/96/f76596f462e67a6803a30a86e1c7ec53.jpg'); background-size: cover; height: 1500px; text-align: center; overflow: visible;"> 
+
+            <div class="boxes-wrapper">
+                <div class="info-box box-one">
+                    <h3>About Me</h3>
+                </div>
+            </div>
+            
+
+        <img src="hehe.png" style="height:380px; width:300px; margin:50px; margin-top: 90px;
+        float: left;" alt="A pretend invisible person wearing a hat, glasses, and
+        coat." />
+
+            <div class="boxes-wrapper">
+                <div class="info-box box-two" style=" text-align: center;">
+                   <h3>Hi everyone &#x2764;</h3>
+                   <p>My name is Nurhazimah Qarirah binti Rafizal!! You can call me Zimah. I am 21 as of this year and still a university student. I was born in Negeri Sembilan so that make me a spicy lover&#x1F975;&#x1F336;&#xFE0F;&#x1F525; </p>
+                </div>
+
+                <div class="info-box box-three" style=" text-align: center;">
+                   <h3>Hobby</h3>
+                   <div class="skills-container">
+
+
+    <span class="skill-box"><img src="headphone.png" style="height:100px;" alt="headphone Icon" class="skill-icon"><p>Listening to music</p></span>
+    <span class="skill-box"><img src="movie.png" style="height:100px;" alt="MOvie Icon" class="skill-icon"><p>Movie watching</p></span>
+    <span class="skill-box"><img src="book.png" style="height:100px;" alt="book Icon" class="skill-icon"><p>Reading book</p></span>
+    
+    
+    
+
+<style>
+    /* Container that aligns the inner skill boxes */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;         /* Allows boxes to move to the next line if space runs out */
+  justify-content: center; /* Centers the inner boxes horizontally */
+  gap: 50px;               /* Space between the inner skill boxes */
+  margin-top: 15px;        /* Pushes them down slightly from the "My Skills" heading */
+}
+
+/* Individual inner skill box styling */
+.skill-box {
+  background-color: rgba(255, 255, 255, 2); /* 65% transparent white background */
+  color: #32400a;                               /* Matches your original text color */
+  padding: 8px 16px;                            /* Inner padding (Top/Bottom, Left/Right) */
+  border-radius: 8px;                           /* Rounded corners for the inner mini-boxes */
+  font-weight: bold;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);    /* Tiny subtle shadow to lift them up */
+  transition: transform 0.2s ease;              /* Smooth animation effect */
+}
+
+/* Optional: Subtle pop effect when you hover your mouse over a skill */
+.skill-box:hover {
+  transform: translateY(-2px);
+  background-color: rgba(255, 255, 255, 0.85);
+}
+</style></div>
+                </div>
+
+               <div class="info-box box-four" style="text-align: center;">
+   <h3>My favourite artist &#x1F929;</h3>
+   <p>This is some of my favourite artist &lt;3 </p>
+   
+   <table style="width: 80%; margin: 20px auto; border-collapse: collapse; background-color: rgba(255, 255, 255, 0.9); color: #333; border-radius: 8px; overflow: hidden; border: 1px solid black;">
+        <tr style="background-color: #b09a84; color: white;">
+            <th style="padding: 10px; border: 1px solid black;">Artist</th>
+            <th style="padding: 10px; border: 1px solid black;">Name</th>
+            <th style="padding: 10px; border: 1px solid black;">Songs</th>
+        </tr>
+
+        <tr>
+            <td style="padding: 10px; border: 1px solid black;"><img src="ABBA.jpg" style="height:100px; display: block; margin: 0 auto;" alt="ABBA Icon" class="skill-icon"></td>
+            <td style="padding: 10px; border: 1px solid black;">ABBA</td>
+            <td style="padding: 10px; border: 1px solid black;">
+              <a href="https://youtu.be/BshxCIjNEjY?si=L6tV6dgJ2EiWjy6g" target="_blank">
+                <img src="sprtpr.jpg"
+                   alt="Watch video on YouTube"
+                   style="max-width:25%; border-radius:12px;">
+                </a>
+                <p style="margin-top:10px;">Click to watch on YouTube</p></td>
+        </tr>
+
+        <tr>
+            <td style="padding: 10px; border: 1px solid black;"><img src="jb.jpg" style="height:100px; display: block; margin: 0 auto;" alt="Justin Bieber Icon" class="skill-icon"></td>
+            <td style="padding: 10px; border: 1px solid black;">Justin Bieber</td>
+            <td style="padding: 10px; border: 1px solid black;">
+              <a href="https://youtu.be/aOypk0bUjNk?si=ABJLPtL36p7Q6tXh" target="_blank">
+                <img src="stuck.jpg"
+                   alt="Watch video on YouTube"
+                   style="max-width:30%; border-radius:12px;">
+                </a>
+                <p style="margin-top:10px;">Click to watch on YouTube</p></td>
+        </tr>
+
+        <tr>
+            <td style="padding: 10px; border: 1px solid black;"><img src="svt.jpg" style="height:100px; display: block; margin: 0 auto;" alt="Seventeen Icon" class="skill-icon"></td>
+            <td style="padding: 10px; border: 1px solid black;">Seventeen</td>
+            <td style="padding: 10px; border: 1px solid black;">
+              <a href="https://youtu.be/pzqsUix8xBs?si=xVwvUwkUwRM0OnJw" target="_blank">
+                <img src="kidult.jpg"
+                   alt="Watch video on YouTube"
+                   style="max-width:30%; border-radius:12px;">
+                </a>
+                <p style="margin-top:10px;">Click to watch on YouTube</p></td>
+        </tr>
+   </table>
+</div>
+
+            </div>    
+
+           
+  
+
+            <style>
+              .boxes-wrapper {
+                display: flex;
+                flex-direction: column;  
+                gap: 20px;               
+                width: 800px;            
+              }
+              .info-box {
+                padding: 2px;
+                border-radius: 15px;     
+                font-family: sans-serif;
+                box-sizing: border-box;
+                box-shadow: 0px 4px 15px rgba(0,0,0,0.05); 
+                text-align: center;
+                position: relative; 
+              }
+              .box-one {
+                background-color: #e03b0c;
+                opacity: 0.7;             
+                color: white;              
+                top: 50px;
+                left: 250px;
+              }
+              .box-two {
+                background-color: #88d1e3; 
+                opacity: 0.9;              
+                color: white;              
+                top: 125px;
+                left: 0px; 
+                width: 800px;
+              }
+              .box-three {
+                background-color:#698020 ; 
+                opacity: 0.6;              
+                color: white;              
+                top: 140px;
+                left: 0px; 
+              }
+              .box-four {
+                background-color:#1e426d ; 
+                opacity: 0.8;              
+                color: white;              
+                top: 170px;
+                width: 1000px;
+                left: 30%;
+                transform: translateX(-50%);
+              }
+            </style>
+
+
+        </div>
+
+    </div> <div class="sticky-footer-container">
+      <marquee>
+        <h1 style="color:white; padding:40px; margin:0; text-align:center;">
+          Made with &#x2764; at Bongek, Rembau &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Have Fun!!!
+        </h1>
+      </marquee>
+    </div>
+
+  </body>
+</html>
